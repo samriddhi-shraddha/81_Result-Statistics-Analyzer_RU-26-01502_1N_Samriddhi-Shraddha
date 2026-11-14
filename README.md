@@ -32,7 +32,7 @@ result-statistics-analyzer/
 
 ## Installation
 ```bash
-git clone https://github.com/samriddhi-shraddha/result-statistics-analyzer.git
+git clone https://github.com/samriddhi-shraddha/81_Result-Statistics-Analyzer_RU-26-01502_1N_Samriddhi-Shraddha.git
 cd result-statistics-analyzer
 pip install -r requirements.txt
 ```
