@@ -20,20 +20,19 @@ Pandas, NumPy, Visualization, Statistics
 
 ## Project structure
 ```
-result-statistics-analyzer/
-├── result_analyzer.py     # main program
-├── results.csv            # sample data
-├── run_tests.py           # runs all 4 test cases
-├── test_data/             # CSV files for the test cases
-├── screenshots/           # chart output
-├── requirements.txt
-└── README.md
+repository/
+├── Codebase/
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── result_analyzer.py
+│   └── results.csv
+└── Testcases/             # screenshots
 ```
 
 ## Installation
 ```bash
 git clone https://github.com/samriddhi-shraddha/81_Result-Statistics-Analyzer_RU-26-01502_1N_Samriddhi-Shraddha.git
-cd result-statistics-analyzer
+cd 81_Result-Statistics-Analyzer_RU-26-01502_1N_Samriddhi-Shraddha/Codebase
 pip install -r requirements.txt
 ```
 
@@ -77,21 +76,7 @@ Passed: 9 | Failed: 1 | Pass percentage: 90.00%
 60-79 : 3
 80-100 : 4
 ```
-![Marks distribution](screenshots/distribution_chart.png)
-
-## Test cases
-| # | Input | Result |
-|---|-------|--------|
-| 1 | Sample file, option 1 | Students 10, Median 72, Mode 72, Highest 95, Lowest 38 |
-| 2 | One row `1,40`, option 1 | Std deviation 0.00, pass 100% |
-| 3a | Extra row `11,120` | `Warning: Row 11 skipped - marks must be between 0 and 100.` |
-| 3b | Header-only file | `No valid marks found. Nothing to analyse.` |
-| 4 | Sample file, option 2 | Passed 9, Failed 1, bands 1 / 2 / 3 / 4, chart shown |
-
-Run them all:
-```bash
-python run_tests.py
-```
+![Marks distribution](../Testcases/distribution_chart.png)
 
 > Note: the sample marks add up to 702, so the program gives mean **70.20** and
 > standard deviation **17.78** (population, `np.std`). The problem sheet lists 70.00 and 17.92.
